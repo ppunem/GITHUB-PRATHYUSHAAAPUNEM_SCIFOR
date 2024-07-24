@@ -1,0 +1,18 @@
+div{
+    background-image: url("https://wallpaperaccess.com/full/3926862.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #90d656;
+    font-family: sans-serif;
+}
+p{
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,29 @@
+#main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid grey;
+    border-radius: 12px;
+    width: 600px;
+    height: 450px;
+}
+#profile-pic{
+    height: 200px;
+    width: 200px;
+    margin-right: 25px;
+}
+#title1{
+    font-weight: 900;
+}
+#title2{
+    font-weight: 900;
+}
+#title3{
+    font-weight: 900;
+}
