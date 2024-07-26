@@ -1,0 +1,30 @@
+1. What is CSS. What are different types types of selectors in CSS?
+Ans: CSS stands for Cascading Style Sheet. It is used for styling HTML documnets for a better presentation of the content on webpage.
+          Types of Selectors:
+          1. Tag Selector: It is used to access an element in HTML by its tag and then style it.
+               Eg: h1{
+                              color:red;
+                            }
+          2. ID Selector: It is used to access an element in HTML by using the value of  "id" attribute given to the element. Also, the value of the ID attribute has to be unique.
+               Eg: #heading{
+                                            color:red;
+                                           }
+          3. Class Selector: It is used to access an Element in HTML by using the value of "class" atttribute given to the element. It's value can be given to any number of elements in HTML.
+               Eg: .heading{
+                                          color:red;
+                                          }
+          4.Universal Selector: The styling defined using a universal selector is applicable to all the elements across the HTML document.
+              Eg: *{
+                          font-family:"Roboto";
+                         }
+          5.Multiple elements can be styled by grouping them together using a comma.
+              Eg: h1,p{
+                               color:red;
+                               }
+
+2. What is CSS Box Model?
+ Ans: In HTML every element is considered as a rectangle. It is divided in to various parts.
+           The main content or the text part is called "Content"
+            The space between the Content and the rectangular box or border is called "Padding"
+           The line surrounding the content and padding is called "Border"
+           The outer space around the border is called "Margin"
