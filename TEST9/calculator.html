@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 10;
+            color: black;
+        }
+        body{
+            text-align: center;
+            color: red;
+            font-size: 50px;
+            background-image: linear-gradient(#009999,#00cccc,#00FFFF,#33FFFF,#66FFFF);
+            height: 100vh;
+            background-repeat: no-repeat;
+        }
+        input:focus{
+            border-color: #4CAF50; 
+            outline: none; 
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.8); 
+            background-color: #6666FF;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Calculator</h3>
+    
+    <!-- Input fields for numbers and operator -->
+    <input type="number" id="number1" placeholder="Enter first number">
+    <input type="number" id="number2" placeholder="Enter second number">
+    <input type="text" id="operator" placeholder="Enter operator (+, -, *, /, %)">
+    
+    <!-- Button to calculate -->
+    <button onclick="calculate()">Calculate</button>
+    
+    <!-- Paragraph to show the result -->
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            //To Get the values from the input fields
+            let num1 = parseFloat(document.getElementById("number1").value);
+            let num2 = parseFloat(document.getElementById("number2").value);
+            let operator = document.getElementById("operator").value;
+            let result;
+
+            //switch statement to perform the calculation
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 === 0) {
+                        result = "Denominator cannot be zero";
+                    } else {
+                        result = num1 / num2;
+                    }
+                    break;
+                case '%':
+                if (num2 === 0) {
+                        result = "Denominator cannot be zero";
+                    } else {
+                        result = num1 % num2;
+                    }
+                    break;
+                default:
+                    result = "Error: Invalid operator";
+            }
+
+            // Displaying the calculation result
+            document.getElementById("result").textContent = "Result: " + result;
+        }
+    </script>
+
+</body>
+</html>
