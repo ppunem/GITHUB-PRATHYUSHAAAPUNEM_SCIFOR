@@ -1,0 +1,38 @@
+header {
+    background-color:pink;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+h2{
+    color: aqua;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+.content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    height: 80vh;
+    width: 100%;
+}
+footer {
+    background-color: grey;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+.category{
+    color:cornflowerblue;
+}
+h4{
+    color: darkseagreen;
+}
+p{
+    font-style: italic;
+}
