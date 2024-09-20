@@ -1,0 +1,35 @@
+<html></html>
+    <head>
+        <title>Fetch Api</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #search{
+                margin-bottom: 10px;
+            }
+            #results{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            button{
+                margin-bottom: 10px;
+            }
+        </style>
+        
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Search Products API</h1>
+            <input type="search" id="search" placeholder="Enter Phone Name">
+            <button type="button" onclick="searchProducts()">Generate API Request</button>
+        </div>   
+        <div id="results"></div>    
+        <script src="script.js"></script>
+    </body>
+</html>
