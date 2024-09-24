@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --text-alignment: center;
+            --bg-color: aqua;
+            --text-color: pink;
+        }
+        h1,h2,p{
+            text-align: var(--text-alignment);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Advanced CSS Properties</h1>
+    <h2>CSS Variables</h2>
+    <p>This is task to apply styling to the html elemnts using CSS Variables.</p>
+</body>
+</html>
