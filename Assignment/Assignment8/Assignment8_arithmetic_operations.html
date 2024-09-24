@@ -1,0 +1,48 @@
+<html>
+    <head> 
+        <style>
+            h1{
+                color: brown;
+                font-style: italic;
+                text-decoration: underline;
+            }
+            
+            div{
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Arithmetic Operations</h1>
+        <div>
+            <label>First Number : </label>
+            <input type="number" placeholder="Enter A Valid Number" id="firstNum">
+        </div>
+        <div>
+            <label>Second Number : </label>
+            <input type="number" placeholder="Enter A Valid Number" id="secondNum">
+        </div>
+        <div>
+            <button type="button" onclick="getValues()">Get Result</button>
+        </div>
+        <script>
+            function getValues(){
+             let num1=parseInt(document.getElementById("firstNum").value);
+             let num2=parseInt(document.getElementById("secondNum").value);
+ 
+             let sum=num1+num2;
+             let subtraction=num1-num2;
+             let multiplicatiion=num1*num2;
+             let division=num1/num2;
+             let modulus=num1%num2;
+ 
+             document.write("Sum of num1 and num2 is : "+sum+"<br>")
+             document.write("Subtraction of num1 and num2 is : "+subtraction+"<br>")
+             document.write("Multiplication of num1 and num2 is : "+multiplicatiion+"<br>")
+             document.write("Division of num1 and num2 is : "+division+"<br>")
+             document.write("Modulus of num1 and num2 is : "+modulus+"<br>")
+            } 
+             
+         </script>
+    </body>
+</html>
