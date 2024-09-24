@@ -1,0 +1,17 @@
+body{
+    background-color: gray;
+    font-style: arial;
+    margin: 20px;
+}
+.heading{
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#para{
+    background-color: lightgray;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
