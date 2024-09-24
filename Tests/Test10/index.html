@@ -1,0 +1,41 @@
+<html></html>
+    <head>
+        <title>Fetch Api</title>
+        <style>
+             .main{ 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #search{
+                margin-bottom: 10px;
+            }
+            #results{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            button{
+                margin-bottom: 10px;
+            }
+        </style>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        
+
+    </head>
+    <body>
+        <div class="main">
+            <h1>Search Products API</h1>
+            <button class="mb-2" type="button" onclick="searchProducts()">Generate API Request</button>
+        </div>
+        <div class="container">
+            <div class="row">   
+                <div id="results" class="d-flex justify-content-between flex-wrap"></div>
+                <div id="error"></div>
+            </div>
+        </div>
+            
+        <script src="script.js"></script>
+    </body>
+</html>
