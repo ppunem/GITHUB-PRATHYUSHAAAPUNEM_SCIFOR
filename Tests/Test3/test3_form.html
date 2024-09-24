@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        label{
+            margin-bottom: 15px;
+        }
+        input{
+            margin-bottom: 15px;
+        }
+        form{
+            background-color: bisque;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        button{
+            background-color: cornflowerblue;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Name: </label>
+            <input type="text" pattern="[A-Z]+" required><br>
+        </div>
+        <div>
+            <label>Username: </label>
+            <input type="text" pattern="[A-Z]+" required><br>
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" pattern="[A-Z]+" required><br>
+        </div>
+        <div>
+            <label>Age: </label>
+            <input type="number" min="20" max="60" required><br>
+        </div>
+        <div>
+            <label>Hobbies: </label><br>
+            <input type="checkbox">
+            <label>Sports</label><br>
+            <input type="checkbox">
+            <label>Gardening</label><br>
+            <input type="checkbox">
+            <label>Reading Books</label><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

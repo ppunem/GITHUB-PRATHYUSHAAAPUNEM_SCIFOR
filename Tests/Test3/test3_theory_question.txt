@@ -1,0 +1,5 @@
+Q. What are semantic elements?
+
+Ans: Semantic elements signify their purpose and the type of content they contain with their name itself. 
+Also makes the html code look more organized.
+           Eg: <header></header>, <footer></footer>,<nav></nav> etc.
