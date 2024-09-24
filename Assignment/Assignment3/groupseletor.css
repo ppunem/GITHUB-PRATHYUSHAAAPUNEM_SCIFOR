@@ -1,0 +1,30 @@
+.all-students-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+#rank1{
+    color: green;
+}
+#rank2{
+    color: red;
+}
+#rank3{
+    color: lightblue;
+}
+#rank4,#rank5,#rank6,#rank7,#rank8,#rank9,#rank10{
+    color: brown;
+}
+ol{
+    border: 5px solid pink;
+    border-radius: 10px;
+    text-align: center;
+    height: 190px;
+    padding: 20px;
+}
+li{
+    margin-left: 15px;
+    font-weight: bold;
+}
