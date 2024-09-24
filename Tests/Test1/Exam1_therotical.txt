@@ -1,0 +1,12 @@
+1 . What is Html?
+Ans : Html stands for Hyper Text  Markup Language. Where HyperText links WEB Pages. Markup Language uses tags, that has text in between the closing and opening tag.
+           Html is used for creating webpages. Its has 2types of tags. Paired and Non Paired tags. Paired tags consists of both opening and closing tags. While, non paired tags consists of only opening tag.
+
+2. What are the features of HTML?
+ Ans: Html is easy to  learn. It defines structure of the webpge. It allows us to add images, audio and videos to webpages. 
+
+3. What is the MIME?
+Ans: MIME stands  for Multipurpose Internet Mail Extensions. It takes care of transferring various kinds of data through Email.
+
+5. What are VOID (EMPTY) Elements in HTML?
+Ans: VOID elements can also be called as Non-paired tags. They only contain closing tag. Eg: <br/>, <hr/>, <img/>
