@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --primary-color:skyblue;
+            --secondary-color:#046307;
+            --text-color:#A9A9A9;
+            --padding:12px 8px;
+            --border-radius:8px;
+        }
+
+        *{
+            text-align: center;
+        }
+        h1{
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+        p{
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 15px;
+        }
+        .container{
+            text-align: center;
+        }
+        button{
+            background-color: var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 12px 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>“The Tortoise and the Hare”</h1>
+        <p>This classic fable (story) is about a very slow tortoise (turtle) and a speedy hare (rabbit). <br>The tortoise challenges the hare to a race.<br> The hare laughs at the idea that a tortoise could run faster than him, but the race ends with a surprising result.<br>
+            Have you ever heard the English expression, “Slow and steady wins the race”? This story is the basis for that common phrase. <br>You can read it for free, along with a number of other stories in this list!<br></p>
+        <div class="container">
+            <button>Like</button>
+            <button>Dislike</button>
+        </div>
+    </div>
+</body>
+</html>
