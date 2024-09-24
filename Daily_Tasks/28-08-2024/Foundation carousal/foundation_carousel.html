@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Carousel with Slick Slider</title>
+    
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <style>
+        .carousel img {
+            width: 100%;
+            height: 600px;
+            border-radius: 5px;
+        }
+        h1{
+          text-align: center;
+          color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h1>Top Places To Visit In Hyderabad</h1>
+            <div class="carousel">
+                <div><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/charminar-monument-hyderabad-andhra-education-imagesuig.jpg" alt="charminar"></div>
+                <div><img src="http://www.thesoultrails.com/wp-content/uploads/2018/11/Golconda-Fort-Hyderabad-Monuments-Heritage-8.jpg" alt="Golconda"></div>
+                <div><img src="https://cdn.getyourguide.com/img/tour/593e69f3b27d4.jpeg/146.jpg" alt="Mecca Mousque"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/what-input@5.2.10/dist/what-input.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).foundation();
+
+    $(document).ready(function(){
+        $('.carousel').slick({
+            dots: true,             
+            infinite: true,         
+            speed: 500,             
+            slidesToShow: 1,        
+            slidesToScroll: 1,      
+            autoplay: true,         
+            autoplaySpeed: 2000,    
+            arrows: true            
+        });
+    });
+</script>
+
+</body>
+</html>
