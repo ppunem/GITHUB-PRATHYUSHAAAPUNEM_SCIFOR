@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<htmnl>
+    <head>
+        <title>Square Function</title>
+        <style>
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-style: italic;
+                font-size: 20;
+                color: black;
+            }
+            body{
+                text-align: center;
+                color: red;
+                font-size: 50px;
+                background-image: radial-gradient(#009999,#00cccc,#00FFFF,#33FFFF);
+                /* background-repeat: no-repeat; */
+                /* height: 100vh; */
+            }
+        </style>
+        <script>
+            // Prompt to take input from the User
+            let num=parseInt(prompt("Enter any number"))
+
+            // Function to return the square of entered number by user
+            function squareofnum(num){
+                return num**2
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Square of the number provided by user</h3>
+        <script>
+            // Displaying the square of the number
+            document.write(squareofnum(num))
+        </script>
+    </body>
+</htmnl>
