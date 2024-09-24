@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor and Pseudo-Elements</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        div{
+            border-radius: 20px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        h1{
+            background-color: blue;
+        }
+        p{
+            background-color: aqua;
+        }
+        p::first-line{
+            color: green;
+            font-weight: 800;
+        }
+        h2::first-letter{
+            color: brown;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        body::before{
+            content:url("https://wallpapercave.com/wp/wp9577226.jpg")
+        }
+        body::after{
+            content:url("https://yt3.ggpht.com/--wJDJ5O2v6w/AAAAAAAAAAI/AAAAAAAAAAA/sEOSTTTVRuQ/s900-c-k-no-mo-rj-c0xffffff/photo.jpg")
+        }
+    </style>
+</head>
+<body>
+    <div style="cursor:move">
+        <h1>Move</h1>
+        <p>The cursor type is Move</p>
+    </div>
+    <div>
+        <h1>Pseudo Elemets</h1>
+        <div>
+            <h2>First-Line</h2>
+            <p>This is first-line pseudo element content</p>
+        </div>
+        <div>
+            <h2>First-Letter</h2>
+            <p>This is first-letter pseudo element content</p>
+        </div>
+        <div>
+            <h2>Before</h2>
+            <p>This is before pseudo element content</p>
+        </div>
+        <div>
+            <h2>After</h2>
+            <p>This is after pseudo element content</p>
+        </div>
+    </div>
+</body>
+</html>
