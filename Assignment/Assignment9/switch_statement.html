@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Switch Statement</title>
+        <style>
+            body{
+                text-align: center;
+                color: red;
+                font-size: 30px;
+            }
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-style: italic;
+                color: yellow;
+            }
+            #bg{
+                height:100vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="bg">
+        <h3>SWITCH STATEMENT</h3>
+        <script>
+            let day = parseInt(prompt("Please Enter a number between 0 to 6"))
+            switch (day) {
+             case 0:
+               document.write("Sunday");
+               document.getElementById("bg").style.backgroundImage="url('https://wallpapercave.com/wp/CdBbiZ7.jpg')"
+               break;
+            case 1:
+               document.write("Monday");
+               document.getElementById("bg").style.backgroundImage="url('https://miro.medium.com/v2/resize:fit:2600/0*cgLC971kx-jrPhnT.jpg')"
+               break;
+             case 2:
+                document.write("Tuesday");
+                document.getElementById("bg").style.backgroundImage="url('https://getwallpapers.com/wallpaper/full/7/5/7/1338915-large-planet-mars-wallpaper-1920x1080.jpg')"
+               break;
+            case 3:
+                document.write("Wednesday");
+                document.getElementById("bg").style.backgroundImage="url('https://www.shutterstock.com/shutterstock/photos/1890767731/display_1500/stock-photo--d-render-number-three-glowing-in-the-dark-pink-blue-neon-light-1890767731.jpg')"
+               break;
+            case 4:
+                document.write("Thursday");
+                document.getElementById("bg").style.backgroundImage="url('https://cf.ltkcdn.net/horoscopes/images/orig/263768-1600x1030-numerology-number-4-means.jpg')"
+               break;
+            case 5:
+                document.write("Friday");
+                document.getElementById("bg").style.backgroundImage="url('https://cdn.theculturetrip.com/wp-content/uploads/2018/05/shutterstock_1097144396.jpg')"
+               break;
+            case 6:
+                document.write("Saturday");
+                document.getElementById("bg").style.backgroundImage="url('https://img.freepik.com/premium-photo/beautiful-black-grey-bird-feathers-pattern-texture-background_926199-556054.jpg')"
+               break;
+            default:
+                document.write("Invalid");
+                document.getElementById("bg").style.backgroundImage="url('https://c8.alamy.com/comp/2RAA207/blue-color-speech-banner-with-word-not-valid-on-white-background-2RAA207.jpg')"
+               break;
+            }
+        </script>
+        </div>
+    </body>
+</html>
