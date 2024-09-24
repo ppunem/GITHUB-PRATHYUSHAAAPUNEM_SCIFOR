@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        label{
+            margin-bottom: 15px;
+        }
+        input{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Name: </label>
+            <input type="text" pattern="[a-z]+" required><br>
+        </div>
+        <div>
+            <label>Username: </label>
+            <input type="text" pattern="[a-z]+" required><br>
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" pattern="[a-z]+" required><br>
+        </div>
+        <div>
+            <label>Age: </label>
+            <input type="number" min="18" max="60" required><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
