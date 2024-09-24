@@ -1,0 +1,38 @@
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.card-content {
+    font-size: 1rem;
+    color: #333;
+}
+h1{
+    color: brown;
+    text-align: center;
+}
+.image{
+    height: 250px;
+    width: 300px;
+}
+.t1{
+    color:orange;
+}
+.t2{
+    color:yellow;
+}
+.t3{
+    color: red;
+}
