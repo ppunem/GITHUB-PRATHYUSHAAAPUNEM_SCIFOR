@@ -1,0 +1,48 @@
+.main{
+    height: 100vh;
+}
+.content {
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+.main{
+    width: 100%;
+}
+@media (max-width:992px){
+    .bg{
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Wallpaper-exotic-green-leaves.jpg");
+        background-size: cover;
+        height: 100%;
+    }
+    .CARD{
+        background-image: linear-gradient(rgb(0, 115, 128),grey);
+    }
+    .header, .footer {
+    background-color:rgb(47, 107, 64);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+}
+@media (min-width:993px){
+    .header, .footer {
+    background-color:cadetblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+    .bg{
+        background-image: url("https://cdn.wallpapersafari.com/8/40/StN8ck.jpg");
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .CARD{
+        background-image:linear-gradient(rgb(47, 107, 64),grey);
+    }
+}
