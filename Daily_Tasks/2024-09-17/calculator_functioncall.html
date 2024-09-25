@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa60mr0GMRoq2bEVx3sM1PW1lHjjE6SdsBskpAiVkVAJcFq0Ktkx04jF2aF" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoK4wJ1qRrFSA6s6dfVf6CGpCJaLIQG7IvoJk5S0bFpnj/T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="calculator_functioncall.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="calculator-container d-flex align-items-center">
+                        <h1 class="head mb-2">My Calculator</h1>
+                        <input type="text" class="number" id="result">
+                        <div class="btn-container">
+                            <button type="button" class="cal-btn">C</button>
+                            <button type="button" class="cal-btn">M-</button>
+                            <button type="button" class="cal-btn">M+</button>
+                            <button type="button" class="cal-btn">+/-</button>
+                            <button type="button" class="cal-btn">ON</button>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="cal-btn">7</button>
+                            <button type="button" class="cal-btn">8</button>
+                            <button type="button" class="cal-btn">9</button>
+                            <button type="button" class="cal-btn">%</button>
+                            <button type="button" class="cal-btn">></button>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="cal-btn">4</button>
+                            <button type="button" class="cal-btn">5</button>
+                            <button type="button" class="cal-btn">6</button>
+                            <button type="button" class="cal-btn">+</button>
+                            <button type="button" class="cal-btn">/</button>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="cal-btn">1</button>
+                            <button type="button" class="cal-btn">2</button>
+                            <button type="button" class="cal-btn">3</button>
+                            <button type="button" class="cal-btn">*</button>
+                            <button type="button" class="cal-btn">=</button>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="cal-btn">0</button>
+                            <button type="button" class="cal-btn">00</button>
+                            <button type="button" class="cal-btn">.</button>
+                            <button type="button" class="cal-btn">*</button>
+                            <button type="button" class="cal-btn">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let result=document.getElementById("result");
+            let btns=document.querySelectorAll(".cal-btn");
+            let currentValue='';
+
+            
+            btns.forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    let btnValue=btn.textContent;
+
+                    if (btnValue==='C'){
+                        currentValue='';
+                        result.value='';
+                    }else if (btnValue==='='){
+                        currentValue=eval(currentValue);
+                        result.value=currentValue;
+                    }else{
+                        currentValue+=btnValue;
+                        result.value=currentValue
+                    }
+                })
+            })    
+        </script>
+    </body>
+</html>
