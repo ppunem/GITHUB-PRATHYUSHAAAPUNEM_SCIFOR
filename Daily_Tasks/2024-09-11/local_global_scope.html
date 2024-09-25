@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Local Global AScope</title>
+        <style>
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                font-style: italic;
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+        <script>
+            var a=25;
+
+            function f1(){
+                var b=30;
+                return a+b
+            }
+
+            function f2(){
+                var c=20;
+                return a+c
+            }
+            
+            function f3(){
+                return b+c
+            }
+        </script>
+    </head>
+    <body>
+        <h1>LOCAL AND GLOBAL SCOPE FUNCTION</h1>
+        <script>
+            document.write(f1()+"<br>")
+            document.write(a+"<br>")
+            document.write(b)
+            document.write(f3())
+        </script>
+    </body>
+</html>
