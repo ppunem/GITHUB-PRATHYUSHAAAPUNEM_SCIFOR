@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpWCWC5M4CkPbxh6x9I6z4mD6CBR9kxMeK5Z3grL3z4I/qF7sdJXT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="d-none d-md-block">
+                <!-- Header Visible from medium devices-->
+                <header class="d-flex mb-2">
+                    <div class="col-1">
+                        <img class="plus-logo" src="https://latestlogo.com/wp-content/uploads/2023/12/flipkart-explore-plus.png" alt="logo"/>
+                    </div>
+                    <div class="search-cont-big d-flex col-6">
+                        <i class="fas fa-magnifying-glass big-search"></i>
+                        <input class="bg-transparent w-100" type="search" placeholder="Search for Products">
+                    </div>
+                    <div class="col-4 d-flex justify-content-between">
+                        
+                            <!-- Button to trigger the first modal -->
+                            <a class="btn btn-transparent d-flex" data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                                <i class="fa-solid fa-user user cont"></i>
+                                <p class="p">Login</p>
+                                <i class="fa-sharp fa-solid fa-angle-down cont"></i></a>
+                        
+                            <!-- Login Modal -->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">Login Form</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex">
+                                                <img src="https://i.ibb.co/dQ4dZQQ/Screenshot-40.png" alt="login">
+                                                <form>
+                                                    <div class="mb-3">
+                                                      <label for="exampleInputEmail1" class="mail-num-label">Enter Email/ Phone Number</label>
+                                                      <input type="text" pattern="(^\+[0-9]{1,3}\.[0-9]{4,14}(?:x.+)?$)|(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)" class="mail-num-input" id="exampleInputEmail1">
+                                                    </div>
+                                                    <p class="terms">By continuing, you agree to Flipkart's <a class="text-primary" href="#">Terms of Use</a> and <a class="text-primary" href="#">Privacy Policy</a></p>
+                                                    
+                                                    <button type="submit" class="login-signup-btn" data-bs-dismiss="modal">Request OTP</button>
+                                                  </form>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="new-existing-user" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">New to Flipkart? Create an account</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Signup Modal -->
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">Sign Up Form</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="d-flex">
+                                                <img src="https://i.ibb.co/gdyvNK1/Screenshot-41.png"  alt="signup"/>
+                                                <div class="signup-form">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="mail-num-label">Enter Phone Number</label>
+                                                        <input type="text" pattern="(^\+[0-9]{1,3}\.[0-9]{4,14}(?:x.+)?$)" class="mail-num-input" id="exampleInputEmail1">
+                                                      </div>
+                                                      <p class="terms">By continuing, you agree to Flipkart's <a class="text-primary" href="#">Terms of Use</a> and <a class="text-primary" href="#">Privacy Policy</a></p>
+                                                      
+                                                      <button type="submit" class="login-signup-btn" data-bs-dismiss="modal">Continue</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="new-existing-user" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Existing User? Login</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cart Modal -->
+                        <button type="button" class="btn btn-transparent d-flex login-button" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <i class="fa-solid fa-cart-shopping cont"></i>
+                            <p class="p">Cart</p>
+                          </button>
+                          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">My Cart</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <img class="empty-cart-img mb-3" src="https://cdn3.iconfinder.com/data/icons/shopping-and-ecommerce-29/90/empty_cart-512.png" alt="empty cart">
+                                    <h6>Missing Cart items?</h6>
+                                    <button type="button" class="cart-login-btn mb-2" data-bs-dismiss="modal">Login</button>
+                                    <a class="mb-2" href="#" data-bs-dismiss="modal">Continue Shopping</a>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        <button class="d-flex btn-transparent mt-2">
+                            <i class="fa-solid fa-user user cont"></i>
+                            <p class="p">Become a Seller</p>
+                        </button>
+                        <button><i class="fa-solid fa-ellipsis-vertical cont"></i></button>
+                    </div>
+                </header>
+            </div>
+                <!--Categories Visible from large devices-->
+                <div class="bg pt-3">
+                    <div class="d-none d-lg-block">
+                        <div class="col-12 top-sec d-flex justify-content-between align-items-center mb-3">
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://everyaustraliancounts.com.au/wp-content/uploads/groceries-970x970.jpg" alt="grocery">
+                                <p class="text-center">Grocery</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/wi/art/5d3ed12d267d6.jpeg" alt="beauty">
+                                <p class="text-center">Beauty</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://iphoned.nl/wp-content/uploads/2023/06/iphone-15-nieuwe-renders.jpg" alt="grocery">
+                                <p class="text-center">Mobiles</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://pop.inquirer.net/files/2019/03/Ad2-1.jpg" alt="fashion">
+                                <p class="text-center">Fashion</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer-1.jpg" alt="electronics">
+                                <p class="text-center">Electronics</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://cdn.designbump.com/wp-content/uploads/2015/08/Great-Living-Room-Furniture-1.jpg" alt="furniture">
+                                <p class="text-center">Furniture</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://www.paldrop.com/wp-content/uploads/2018/09/must-have-kitchen-appliances.jpeg" alt="appliances">
+                                <p class="text-center">Home Appliances</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://s31606.pcdn.co/wp-content/uploads/2019/08/iStock-515974906-e1566780839146.jpg" alt="Travel">
+                                <p class="text-center">Travel</p>
+                            </button>
+                            <button class="d-flex flex-column justify-content-center align-items-center">
+                                <img class="main-img" src="https://i5.walmartimages.com/asr/2fbc473a-665f-4311-bca3-6a9980bb70b4.f2632eae69cce37d3b47e1904a95126d.jpeg" alt="toys">
+                                <p class="text-center">Toys</p>
+                            </button>
+                          </div>
+                    </div>
+                  <!--Flipkart and Grocery buttons Visible in Small devices-->
+                  <div class="d-block d-md-none">
+                    <div class="col-12 pt-3 d-flex gap-2 fixed-left">
+                        <button class="btn btn-primary w-50 mr-1" type="button"><img class="logo1" src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Emblem.png" alt="logo"><span class="flipkart-logo-text">Flipkart</span></button>
+                        <button class="btn btn-outline-primary w-50 ml-1" type="button"><img class="logo1 mr-1" src="https://www.bcwebwise.com/uploads/blog_images/flipkart-joins-the-online-grocery-bandwagon1572423207.jpg" alt="grocery"><span class="flipkart-grocery-text">Grocery</span></button>
+                     </div>
+                  </div>
+                  <!--Items search input Visible in Small devices-->
+                  <div class="d-block d-md-none">
+                    <div class="col-12 d-flex mt-3 mb-3 search-container">
+                        <i class="fas fa-magnifying-glass mt-1"></i>
+                        <input class="bg-transparent w-100" type="search" placeholder="Search for Products">
+                    </div>
+                  </div>
+                
+                <div>
+                    <!--Carousel Visible in all devices-->
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://s3b.cashify.in/gpro/uploads/2022/09/19133141/Flipkart-Big-Billion-Days-Sale_-Grab-Huge-Discount-on-iPhone-13.jpg" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://tri3d.in/wp-content/uploads/2021/06/FlipkartBanner-01.png" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.livemint.com/img/2022/09/13/600x338/flipkart_big_billion_days_1663049374767_1663049395888_1663049395888.png" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/09/flipkart_big_billion_days_sale_feat-1.png" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.livemint.com/img/2022/09/13/600x338/flipkart_big_billion_days_1663049374767_1663049395888_1663049395888.png" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://hotdealszone.in/wp-content/uploads/2021/05/Flipkart-Grocery-Offers.jpg" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://s3b.cashify.in/gpro/uploads/2021/09/15140000/Best-Smartphone-Deals-on-Flipkart-Big-Billion-Day-Sale.jpg" class="d-block w-100" alt="image">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <!--Categories visible till medium devices-->
+                <div class="d-block d-lg-none">
+                    <div class="col-12 mt-3">
+                        <div class="d-flex justify-content-between flex-nowrap">
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://pop.inquirer.net/files/2019/03/Ad2-1.jpg" alt="fashion"><p class="fashion">Fashion</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://iphoned.nl/wp-content/uploads/2023/06/iphone-15-nieuwe-renders.jpg" alt="phone"><p class="fashion">Mobiles</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://philnews.ph/wp-content/uploads/2017/01/smartwatch.jpg" alt="gadgets"><p class="fashion">Gadgets</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/wi/art/5d3ed12d267d6.jpeg" alt="beauty"><p class="fashion">Beauty</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://i2.wp.com/catesthill.com/wp-content/uploads/2017/08/catesthill-homesense-finds-everyday-kitchen-essentials-19.jpg?resize=900%2C1200" alt="kitchen"><p class="fashion">Kitchen</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://www.bhphotovideo.com/images/images2500x2500/lg_electronics_32ln5310_32_1080p_led_tv_982177.jpg" alt="tv"><p class="fashion">Tv's</p></button>
+                            <button type="button" class="round-btn d-block d-lg-none col-1"><img class="fashion-img" src="https://i5.walmartimages.com/asr/2fbc473a-665f-4311-bca3-6a9980bb70b4.f2632eae69cce37d3b47e1904a95126d.jpeg" alt="toys"><p class="fashion">Toys</p></button>
+                        </div>
+                </div>
+                </div>
+                <!--Product cards-->
+                <div class="row row-cols-1 row-cols-md-3 g-4 d-flex d-block d-md-none w-100">
+                    <button class="col-4">
+                      <div class="card">
+                        <img src="https://imtmonline.com/wp-content/uploads/2021/06/A321XLR-IndiGo.jpg" class="card-img-top first-set" alt="flights">
+                        <div class="card-body">
+                          <p class="card-text">Indigo Flights</p>
+                          <h5 class="card-title price">From Rs1,299</h5>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="col-4">
+                      <div class="card">
+                        <img src="https://media.techietech.tech/2023/09/iPhone-15-and-iPhone-15-Plus-launched.jpg" class="card-img-top first-set" alt="iphone 15 plus">
+                        <div class="card-body">
+                          <p class="card-text">Iphone 15 Plus</p>
+                          <h5 class="card-title price">From Rs79,999</h5>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="col-4">
+                      <div class="card">
+                        <img src="https://images.thdstatic.com/catalog/productImages/1000/36/3683459a-8156-41b4-a83d-8698376249a3_1000.jpg" class="card-img-top first-set" alt="purifiers">
+                        <div class="card-body">
+                          <p class="card-text">Water Purifiers</p>
+                          <h5 class="card-title price">From Rs8,000</h5>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                    </div>
+                  </div>
+                  <!--Product cards-->
+                  <div class="my-container mt-3 d-block d-md-none pl-2 pr-3 w-100">
+                    <p class="quality">Quality You Trust, Price You Love!</p>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <button class="col-6">
+                              <div class="card p-2">
+                                <img src="https://cdn.aarp.net/content/dam/aarp/entertainment/beauty-and-style/2020/04/1140-hair-products-on-table.imgcache.rev8f7f4b7d73a8f52b9215c7fcdcca6632.jpg" class="card-img-top second-set" alt="haircare">
+                                <div class="card-body">
+                                  <p class="card-text">Hair Treatment</p>
+                                  <h5 class="card-title text-success">Specials</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col-6">
+                              <div class="card p-2">
+                                <img src="https://i.pinimg.com/originals/f4/28/71/f42871e06d6dbcc63e0e7b209bf7cf87.jpg" class="card-img-top second-set" alt="lunch boxes">
+                                <div class="card-body">
+                                  <p class="card-text">Lunch Boxes</p>
+                                  <h5 class="card-title text-success">Specials</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col-6">
+                              <div class="card p-2 mb-3">
+                                <img src="https://i.pinimg.com/originals/06/c3/ab/06c3abcfef9ca1b6a9891d47b3c9d02f.jpg" class="card-img-top second-set" alt="Lip Balm">
+                                <div class="card-body">
+                                  <p class="card-text">Lip Balm</p>
+                                  <h5 class="card-title text-success">Specials</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col-6">
+                              <div class="card p-2 mb-3">
+                                <img src="https://i5.walmartimages.com/asr/7163a15b-4ccd-4d01-a865-a3df07cb1787_1.fd0bfefedd5940a3812c58a2acba87a1.jpeg" class="card-img-top second-set" alt="mascara">
+                                <div class="card-body">
+                                  <p class="card-text">Mascara</p>
+                                  <h5 class="card-title text-success">Specials</h5>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                  </div>
+                                 
+                  <!--Product cards-->
+                  <div class="my-container mt-3 d-none d-md-block">
+                    <p class="quality">Quality You Trust, Price You Love!</p>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <button class="col">
+                          <div class="card p-2 mb-3">
+                            <img src="https://cdn.aarp.net/content/dam/aarp/entertainment/beauty-and-style/2020/04/1140-hair-products-on-table.imgcache.rev8f7f4b7d73a8f52b9215c7fcdcca6632.jpg" class="card-img-top second-set" alt="haircare">
+                            <div class="card-body">
+                                <p class="card-text">Hair Treatment</p>
+                                <h5 class="card-title text-success">Specials</h5>
+                              </div>
+                          </div>
+                        </button>
+                        <button class="col">
+                            <div class="card p-2 mb-3">
+                              <img src="https://i.pinimg.com/originals/f4/28/71/f42871e06d6dbcc63e0e7b209bf7cf87.jpg" class="card-img-top second-set" alt="lunch boxes">
+                              <div class="card-body">
+                                <p class="card-text">Lunch Boxes</p>
+                                <h5 class="card-title text-success">Specials</h5>
+                              </div>
+                            </div>
+                        </button>
+                        <button class="col">
+                            <div class="card p-2 mb-3">
+                              <img src="https://i.pinimg.com/originals/06/c3/ab/06c3abcfef9ca1b6a9891d47b3c9d02f.jpg" class="card-img-top second-set" alt="Lip Balm">
+                              <div class="card-body">
+                                <p class="card-text">Lip Balm</p>
+                                <h5 class="card-title text-success">Specials</h5>
+                              </div>
+                            </div>
+                        </button>
+                          <button class="col">
+                            <div class="card p-2 mb-3">
+                              <img src="https://i5.walmartimages.com/asr/7163a15b-4ccd-4d01-a865-a3df07cb1787_1.fd0bfefedd5940a3812c58a2acba87a1.jpeg" class="card-img-top second-set" alt="mascara">
+                              <div class="card-body">
+                                <p class="card-text">Mascara</p>
+                                <h5 class="card-title text-success">Specials</h5>
+                              </div>
+                            </div>
+                        </button>
+                      </div>                 
+                  </div>
+    
+                  <!-- <div class="col-12 mt-3">
+                        <div class="scrolling-text bg-primary text-white p-2">
+                            <p>BLR-HYD:Rs 3,801 <span class="slashed">Rs 4380</span>BLR-DEL:Rs 5,562 <span class="slashed">Rs 4380</span>BLR-CHE:Rs 1420 <span class="slashed">Rs 2100</span></p>
+                        </div>
+                  </div> -->
+
+                  <!--Gadgets and smart phones-->
+                <div class="d-none d-md-block">
+                  <div class="d-flex mt-3 p-3 sides-bg">
+                    <div class="col-4 bg-white">
+                        <p class="quality">Best Gadgets & Electronics</p>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <button class="col">
+                              <div class="card p-2 flex-shrink-0">
+                                <div class="text-center">
+                                    <img src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2017/02/Logitech-G533-Wireless-Gaming-Headset_Image-1.jpg" class="card-img-top side-set" alt="headset">
+                                </div>
+                                <div class="card-body">
+                                  <p class="card-text side-head">Headset</p>
+                                  <h5 class="card-title text-success side-para">Min 50% Off</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col">
+                              <div class="card flex-shrink-0">
+                                <img src="https://i5.walmartimages.com/asr/c04da478-0547-4b4a-8a1f-a38b979a362a_1.ec3cda1e737afca6581e881b6606db20.jpeg" class="card-img-top side-set" alt="trimmers">
+                                <div class="card-body">
+                                  <p class="card-text side-head">Trimmers</p>
+                                  <h5 class="card-title text-success mb-4 side-para">Min 50% Off</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col">
+                              <div class="card flex-shrink-0">
+                                <img src="https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP750/SP750-airpods.jpeg" class="card-img-top side-set" alt="airpods">
+                                <div class="card-body">
+                                  <p class="card-text side-head">True Wirelss</p>
+                                  <h5 class="card-title text-success side-para">Trending</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col">
+                              <div class="card flex-shrink-0">
+                                <img src="https://m.media-amazon.com/images/I/71i0MvovfGL._AC_SL1500_.jpg" class="card-img-top side-set pt-1" alt="smartwatches">
+                                <div class="card-body">
+                                  <p class="card-text side-head">Smart Watches</p>
+                                  <h5 class="card-title text-success side-para">Min 40% Off</h5>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                    </div>
+                    <button class="col-8 right-side-img">
+                        <div class="d-flex">
+                            <img src="https://i.pinimg.com/originals/eb/9f/37/eb9f3772c2d90203412a221d6cf044b1.png" class="side-logo" alt="logo">
+                            <div>
+                                <h1 class="side-img-text head">Top Selling Smart Phones</h1>
+                                <p class="side-img-text">Latest Technology, Best Brands</p>
+                            </div>
+                        </div>
+                    </button>
+                  </div>
+                </div>
+                  <!--Product cards-->
+                  <div class="my-container2 mt-3 d-block d-md-none pl-2 pr-3 w-100">
+                    <p class="quality">Deals Handpicked for You!</p>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <button class="col-6">
+                              <div class="card p-2">
+                                <img src="https://www.klarna.com/sac/product/1200x630/3008106995/Minimalist-2-Salicylic-Acid-Face-Wash.jpg" class="card-img-top second-set" alt="minimalist">
+                                <div class="card-body">
+                                  <p class="card-text">Minimalist 2% Salicy...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">299</span>Rs 284</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col-6">
+                              <div class="card p-2">
+                                <img src="https://cdn.ae1stcry.com/brainbees/images/products/zoom/5ff88ae3f5f71a.jpg" class="card-img-top second-set" alt="cetaphil">
+                                <div class="card-body">
+                                  <p class="card-text">Cetaphil Gentle Skin...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">399</span>Rs 379</h5>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="col-6">
+                                <div class="card p-2 suggestions">
+                                  <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/351757/aqualogica-glow-smoothie-face-wash-87_1_display_1695040816_7b42c77a.jpg" class="card-img-top second-set" alt="aqualogica">
+                                  <div class="card-body">
+                                    <p class="card-text">Aqualogica Glow+Smo...</p>
+                                    <h5 class="card-title text-dark"><span class="slashed">249</span>Rs 218</h5>
+                                  </div>
+                                </div>
+                            </button>
+                            <button class="col-6">
+                              <div class="card p-2 suggestions">
+                                <img src="https://m.media-amazon.com/images/I/51eG-RVaRbL.__AC_SX300_SY300_QL70_ML2_.jpg" class="card-img-top second-set" alt="minimalist">
+                                <div class="card-body">
+                                  <p class="card-text">Minimalist 5% Aqua...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">299</span>Rs 284</h5>
+                                </div>
+                              </div>
+                            </button>
+                          </div>
+                  </div>
+                  <!--Product cards-->
+                  <div class="my-container2 mb-3 mt-3 d-none d-md-block w-100">
+                    <p class="quality">Quality You Trust, Price You Love!</p>
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                        <button class="col">
+                          <div class="card p-2 mb-3">
+                            <img src="https://www.klarna.com/sac/product/1200x630/3008106995/Minimalist-2-Salicylic-Acid-Face-Wash.jpg" class="card-img-top second-set" alt="minimalist">
+                                <div class="card-body">
+                                  <p class="card-text">Minimalist 2% Salicy...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">299</span>Rs 284</h5>
+                                </div>
+                          </div>
+                        </button>
+                        <button class="col">
+                            <div class="card p-2 mb-3">
+                                <img src="https://cdn.ae1stcry.com/brainbees/images/products/zoom/5ff88ae3f5f71a.jpg" class="card-img-top second-set" alt="cetaphil">
+                                <div class="card-body">
+                                  <p class="card-text">Cetaphil Gentle Skin...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">399</span>Rs 379</h5>
+                                </div>
+                            </div>
+                        </button>
+                          <button class="col">
+                            <div class="card p-2 mb-3">
+                                <img src="https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/351757/aqualogica-glow-smoothie-face-wash-87_1_display_1695040816_7b42c77a.jpg" class="card-img-top second-set" alt="aqualogica">
+                                <div class="card-body">
+                                  <p class="card-text">Aqualogica Glow+Smo...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">249</span>Rs 218</h5>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="col">
+                            <div class="card p-2 mb-3">
+                                <img src="https://m.media-amazon.com/images/I/51eG-RVaRbL.__AC_SX300_SY300_QL70_ML2_.jpg" class="card-img-top second-set" alt="minimalist">
+                                <div class="card-body">
+                                  <p class="card-text">Minimalist 5% Aqua...</p>
+                                  <h5 class="card-title text-dark"><span class="slashed">299</span>Rs 284</h5>
+                                </div>
+                            </div>
+                        </button>
+                      </div>                 
+                  </div>
+                </div>
+            </div>
+            <!--Ranges available in flipkart visible only large and above devices-->
+            <div class="bg-bot d-none d-lg-block">
+                <h3>Top Stories : Brand Directory</h3>
+                <p class="b-p"><span class="bot-head">MOST SEARCHED FOR ON FLIPKART:</span> Nothing Phone 2a Plus | Rakhi | Rakhi Gifts for Brother | Raksha Bandhan Gifts for Sister | Bhalya Bhabhi Rakhi | Sarees | CMF by Nothing Phone 1 Pocket Bazaar | Xiaomi 14 CIVI iPhone 15 | Infinix Note 40 | Samsung Galaxy S21 FE SG Qualcomm | vivo V30 | Samsung Galaxy S24 50 | Samsung Galaxy S24+ SG iPhone 12 64GB | iPhone 12 Pro | iPhone 15 Plus | iPhone 15 Pro Blue | iPhone 15 Pro Black | vivo X Fold3 Pro | Motorola g04s iPhone 15 Pro Max Blue | iPhone 15 Pro Max Black | Vivo x 100 | OnePlus Nord CE 3 Lite 5G | Spoyl Store SAMSUNG Flips SAMSUNG FoldS | Flipkart Axis Bank Super Elite Credit card SG Mobile Phones | Primebook Laptops Moto Edge 40 | Grievance Redressal | OPPO Reno7 Pro 5G | iPhone 13 | Help Centre | Track Orders | Manage Orders | Return Orders | Gift Cards Store | Flipkart Axis Bank Credit Card Pay Later</p>
+                <p class="b-p"><span class="bot-head">MOBILES: </span>Redmi 12 5G | Realme 12+ 5G | Motorola G84 | Realme C53 | Infinix Smart 8 | Samsung Galaxy S23 5G | 512GB IPhone 12 128GB | Vivo Y15 | SAMSUNG Galaxy S21 FE 5G | Infinix HOT 301 | Realme 10 Pro SG | MOTOROLA G62 5G | Nothing Phone | REDMI Note 12 Pro 50 | Infinix SMART | Vivo Y12 | Oppo A12 | Motorola 5g Phone Realme 5g Smartphone Apple 5g Phone | Iqoo 5g Phones | Oneplus 5g Phones | Viva 5g Phones | Oppo 5g Smart Phones | Oppo F15 | Oppo A31 | Samsung A71 | Samsung A51 | Samsung A31 | iPhone 11 | iPhone 11 Pro | 4G Mobile | Nokia Mobile Samsung Mobile phone | Oppo Mobile | VivoMobile</p>
+                <p class="b-p"><span class="bot-head">CAMERA: </span>GoPro Action Camera | Nikon Camera | Canon Camera Sony Camera | Canon DSLR | Nikon DSLR</p>
+                <p class="b-p"><span class="bot-head">LAPTOPS: </span>Asus ROG Ally | MacBook Pro M2 | Premium Laptop | ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen | ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen | ASUS Zenbook 14 OLED (2022) | Realme Bock Prime Core i5 11th Gen Microsoft Surface Book3 | 12th Gen Intel Core Laptops</p>
+                <p class="b-p"><span class="bot-head">TVS: </span>Nokia TV | Panasonic TV | Thomson TV | MiX Pro | Realme TV | Motorola TV | OnePlus TVs | LG TV | TV | Sony TV | Samsung TV | Android Television Tiffalcon Tv Mi TV</p>
+                <p class="b-p"><span class="bot-head">LARGE APPLIANCES: </span>Television | Washing Machines | Refrigerators | Air Conditioners | Electric Cookers | Electric Jug(Heater)/Travel Kettles | Induction Cooktops | Inverters/stabilizer Irons/Iron Box | Mixer Grinder Juicer | Wet Grinders Chimneys | Microwave Ovens | Vacuum Cleaners | Water Purifier Fan</p>
+                <p class="b-p"><span class="bot-head">CLOTHING: </span>Green bridal lehenga | Tops | Shoes | Sunglasses | Bridal Blouse | Half saree blouse designs | Designer blouses | Blouse designs | Shirts | Cotton saree blouse designs | Tshirts Jeans Dresses One pieces Groom wedding sherwani | Designer Salwar Suits | Bra | Cotton simple blouse designs | Banarasi saree blouse designs Stylish blouse astin design | Track Pant | Blouse neck designs | Kurtas | Party Dresses | Palazzo Suits | Anarkali | Gowns | Cut out dress | Salwar Suits | Kurtis | Designer Sarees | Leggings | Shorts Georgette Sarees | Ethnic Wear | uppada pattu sarees | Blouse back design | Jodhpur pants</p>
+                <p class="b-p"><span class="bot-head">FOOTWEAR: </span>Adidas Shoes | Reebok Shoes Nike Shoes | Puma Shoes | Boots Bata Shoes | Woodland Shoes Skechers Shoes Sneakers | Womens Boots | Sports Shoes Loafers Sandals | Lotto Sports Shoes | Casual Shoes | Womens Skechers Shoes | Asics Sports Shoes | Formal Shoes | School Shoes</p>
+                <p class="b-p"><span class="bot-head">GROCERIES: </span>PhonePe Grocery Voucher | Hand Wash | Soap | Cashew Nuts | Sunflower Oil | Eggs | Toilet Cleaner | Harpic Toilet Cleaner | Dettol Soap | Mustard Oil Biscuits Cheese Patanjali Atta Fortune Oil Aashirvaad Atta Tea</p>
+                <p class="b-p"><span class="bot-head">BEST SELLING ON FLIPKART: </span>Headphones | Baby | Food | Chocolates | Cycles | Calculators | Lipsticks | Mask | Vertiv UPS | Fastrack Watches | Wallets | Earrings | Gold Coins | Realme Pad Mini | Handbags conekt SW2 Smartwatch | Mivi DuoPods a350 | Speaker Cleaner</p>
+                <p class="b-p"><span class="bot-head">FURNITURE: </span>Furniture | Sofas | Beds | Dining sets | Wardrobes | Mattresses | TV Units | Tables | Chairs | Shelves | Bean Bags | Office Chairs | Computer Table | Office Tables | Red Sofa | Wakefit Beds | White Sofa | Wakefit Mattress Green Sofa | Black Sofa | Brown Sofa</p>
+                
+                <h5>Flipkart: The One-stop Shopping Destination</h5>
+                <p class="b-p">E-commerce is revolutionizing the way we all shop in India. Why do you you want to hop from one store to another in search of the latest phone when you can find it on the internet in a single click? Not only mobiles. Flipkart houses everything you can possib Imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in vogue fashion staples like shoes, clothing and lifestyle accessories; from modem furniture Ske sofa sets, dining tables, and wardrobes to appliances that n your the easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, et night or in the wee hours of the morning. This e-commerce never shuts down<br>
+                    <br>what's more with our year-round shopping festivals and events, our prices are irresistible. We're sure you'l find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when mere are multiple options available to you, well, the below will answer your question</p>
+                <h5>Flipkart Plus</h5>
+                <p class="b-p">A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a a part of this service. For every 100 rupees spent on Flipkart order, Plus members eams 4 supercoins & non-plus members eam 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, esm more when you shop more!<br>
+                    <br>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+                    An annual Zomato Gold membership<br>
+                    An annual Hotstar Premium membership 6 months Gaara plus subscription<br>
+                    Rupees 550 instant discount on fights on ixigo<br>
+                    Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.<br>
+                </p>
+                <h5>No Cost EMI</h5>
+                <p class="b-p">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select moblies, laptops, large and small applianciens, fumiture, electronics and now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAPI Terms and conditions apply</p>
+                <h5>EMI on Debit Cards</h5>
+                <p class="b-p">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+                <h5>Mobile Exchange Offers</h5>
+                <p class="b-p">Get an instant discount on the phone that you have been eyeing on. Exchange your r old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicate for an exchange offer, you will see the Buy with Exchange option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+            </div>
+            <!--Footer containing Contact Help and address section visible in large and above devices-->
+            <div class="d-none d-lg-block">
+                <footer class="bg-dark pt-3 d-flex flex-row">
+                    <ul class="col-2 d-flex flex-column">
+                        <p class="footer-head ml-2">About</p>
+                        <li><button class="text-light">Contact Us</button></li>
+                        <li><button class="text-light">About Us</button></li>
+                        <li><button class="text-light">Careers</button></li>
+                        <li><button class="text-light">Flipkart Stories</button></li>
+                        <li><button class="text-light">Press</button></li>
+                        <li><button class="text-light">Corporate Information</button></li>
+                    </ul>
+    
+                    <ul class="col-2 d-flex flex-column">
+                        <p class="footer-head ml-2">Help</p>
+                        <li><button class="text-light">Payments</button></li>
+                        <li><button class="text-light">Shipping</button></li>
+                        <li><button class="text-light">Cancellation & Returns</button></li>
+                        <li><button class="text-light">FAQ</button></li>
+                        <li><button class="text-light">Report Infringemen</button>t</li>
+                    </ul>
+                    <ul class="col-2 d-flex flex-column">
+                        <p class="footer-head ml-2">Consumer Policy</p>
+                        <li><button class="text-light">Cancellation & Returns</button></li>
+                        <li><button class="text-light">Terms Of Use</button></li>
+                        <li><button class="text-light">Security</button></li>
+                        <li><button class="text-light">Privacy</button></li>
+                        <li><button class="text-light">Sitemap</button></li>
+                        <li><button class="text-light">Grievance Ridressal</button></li>
+                        <li><button class="text-light">EPR Compliance</button></li>
+                    </ul>
+                    <div class="vertical-line"></div>
+                    <ul class="col-2 d-flex flex-column">
+                        <p class="footer-head ml-2">Mail Us</p>
+                        <p class="text-light address">Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia <br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103<br> Karnataka, India</p>
+                        <p class="footer-head ml-2 mt-2">Social</p>
+                        <div class="d-flex justify-content-between soc-container">
+                            <button><i class="fab fa-facebook-f soc-icon"></i></button>
+                            <button><i class="fab fa-twitter soc-icon"></i></button>
+                            <button><i class="fab fa-youtube soc-icon"></i></button>
+                        </div>
+                    </ul>
+                    <ul class="col-2 d-flex flex-column">
+                        <p class="footer-head ml-2">Registered Office Address</p>
+                        <p class="text-light address">Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia <br> Clove Embassy Tech Village,<br> Outer Ring Road, Devarabeesanahalli Village,<br> Bengaluru, 560103<br> Karnataka, India<br>CIN: U51109KA2012PTC066107<br>Telephone: 044-45614700/044-67415800</p>
+                    </ul>
+                </footer>
+                
+            </div>
+            <!--Footer visible in medium and below devices-->
+            <footer class="d-block d-lg-none fixed-bottom">
+                <div class="d-flex justify-content-between pl-3 pr-3 bg-light border-top">
+                    <div class="d-flex flex-column col-2 text-center mt-2">
+                        <i class="fas fa-home"></i>
+                        <p class="text-center icon-text">Home</p>
+                    </div>
+                    <div class="d-flex flex-column col-2  text-center mt-2">
+                        <i class="fas fa-compass"></i>
+                        <p class="text-center icon-text">Explore</p>
+                    </div>
+                    <div class="d-flex flex-column col-2 text-center mt-2">
+                        <i class="fas fa-table"></i> 
+                        <p class="text-center icon-text">Categories</p>
+                    </div>
+                    <div class="d-flex flex-column col-2 text-center mt-2">
+                        <i class="fas fa-user"></i>
+                        <p class="text-center icon-text">Account</p>
+                    </div>
+                    <div class="d-flex flex-column col-2 text-center mt-2">
+                        <i class="fas fa-cart-shopping"></i>
+                        <p class="text-center icon-text">Cart</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
